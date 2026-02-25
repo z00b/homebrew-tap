@@ -5,21 +5,21 @@
 class Hellbun < Formula
   desc "A simple Hello, Bun! application"
   homepage "https://github.com/z00b/hello-bun"
-  version "0.0.20"
+  version "0.0.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/z00b/hello-bun/releases/download/v0.0.20/hello-bun_Darwin_x86_64.tar.gz"
-      sha256 "728fab8749d0050bdc9aff8bfa4050c10a8ce97868717fe4bcf5cd1b1c603d96"
+      url "https://github.com/z00b/hello-bun/releases/download/v0.0.22/hello-bun_Darwin_x86_64.tar.gz"
+      sha256 "e5a2925638af2b7e2e85a154c5ad837e49153618868e095be256911a661502e6"
 
       def install
         bin.install "hellbun"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/z00b/hello-bun/releases/download/v0.0.20/hello-bun_Darwin_arm64.tar.gz"
-      sha256 "226fb48ec16a4f4f922423e343f350e111e161df18088c0f5485f5abeead7277"
+      url "https://github.com/z00b/hello-bun/releases/download/v0.0.22/hello-bun_Darwin_arm64.tar.gz"
+      sha256 "f63dae9aeb33241eaf8996ca3a7296735b689bdbd609e47d84ff72d323d8e237"
 
       def install
         bin.install "hellbun"
@@ -30,8 +30,8 @@ class Hellbun < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/z00b/hello-bun/releases/download/v0.0.20/hello-bun_Linux_x86_64.tar.gz"
-        sha256 "2e7434907e0611aeb2472fa98ae2feb17f8b6ebca354fedd28a94f29417d1b16"
+        url "https://github.com/z00b/hello-bun/releases/download/v0.0.22/hello-bun_Linux_x86_64.tar.gz"
+        sha256 "5430cfe61d001f95894c3e37464bf907ce83f32408b9766c773c0ca5d4aa825e"
 
         def install
           bin.install "hellbun"
@@ -40,8 +40,8 @@ class Hellbun < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/z00b/hello-bun/releases/download/v0.0.20/hello-bun_Linux_arm64.tar.gz"
-        sha256 "7ba157bd561d43626b50b0a46241900a34fbf052705b36fde162eb58ce2d58e8"
+        url "https://github.com/z00b/hello-bun/releases/download/v0.0.22/hello-bun_Linux_arm64.tar.gz"
+        sha256 "ec6142a076cabbcb9bebcc77cf019d08b935ec39acdc683aecb5c863d58b4c57"
 
         def install
           bin.install "hellbun"
